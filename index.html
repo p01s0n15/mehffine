@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mehffine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1be014deab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Learner</p>
+                <h1>Hi, I'm <span>Pratham</span><br>Junior @ IIIT Delhi</h1>
+            </div>
+        </div>
+    </div>
+<!-----------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                         sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C++ / C / Python / Java / Javascript / R </li>
+                        <li><span>Tools and Tech</span><br>Scene Builder, VM - Kali Linux, Python Libraries, Operating Systems, JavaFX, MySQL , figma, Canva, Photoshop , HTML , CSS , Kali Tools, Arduino, React</li>
+                        <li><span>Technical Electives</span><br>Data Structures and Algorithms, Advanced Programming , Computer Organisation, Introduction to Programming,Multivariate Calculus, Linear Algebra, Probability and Statistics, Operating System</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>nil1</span><br></li>
+                        <li><span>nil2</span><br></li>
+                        <li><span>nil3</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026</span><br>CS @ iiitd<br></li>
+                        <li><span>202x</span><br>Class 12<br></li>
+                        <li><span>201x</span><br>Class 10<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------projects---------------- -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                    <h2>Project 1</h2>
+                    <p>lorem ipsum dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Project 2</h2>
+                    <p>lorem ipsum dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Project 3</h2>
+                    <p>lorem ipsum dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+     <!-- ------------------portfolio------------------
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+        </div>
+     </div> -->
+     <!-- ------------------contact------------------- -->
+      <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> mehul.gautam13@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> phone#no</p><br>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <br>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <br><br>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 btn3">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with <i class="fas fa-heart"></i> by mehffine</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyQTQsrl0P0R03jrKJRHg3AlBIvcd52e5KpRDB7ks7pM4A-71n_wXIA19chzTGZUvih/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
